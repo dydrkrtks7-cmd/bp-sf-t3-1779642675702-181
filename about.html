@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정보 — PBN 빌더 | 마포 서버 웜업</title>
+    <meta name="description" content="마포에서 PBN 빌더로 서버 웜업? 우리는 규격을 깬다. brutalism 그 자체, 24시간 원격 웜업, 하드코어한 결과를 원하면 지금 전화하라.">
+    <meta name="keywords" content="PBN 빌더, 서버 웜업, 마포, PBN, 웜업, 서버 관리, brutalist, PBN builder, server warmup, link building">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <link rel="canonical" href="https://sf-t3-1779642675702-181.pages.dev/info">
+    <!-- Open Graph -->
+    <meta property="og:title" content="PBN 빌더 | 마포 서버 웜업 — 정보">
+    <meta property="og:description" content="마포에서 PBN 빌더로 서버 웜업? 우리는 규격을 깬다. brutalism 그 자체, 24시간 원격 웜업, 하드코어한 결과를 원하면 지금 전화하라.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sf-t3-1779642675702-181.pages.dev/info">
+    <meta property="og:locale" content="ko_KR">
+    <style>
+        /* RESET & BASE */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body { background: #0d0d0d; color: #e0e0e0; font-family: 'Courier New', Courier, monospace; line-height: 1.6; min-height: 100vh; }
+        img, svg { max-width: 100%; height: auto; display: block; }
+        a { color: #ff3b30; text-decoration: none; border-bottom: 2px solid transparent; transition: border-color 0.2s; }
+        a:hover { border-bottom-color: #ff3b30; }
+        ul { list-style: none; }
+
+        /* TYPOGRAPHY – oversized, raw */
+        h1, h2, h3, h4 { font-weight: 800; letter-spacing: -0.04em; text-transform: uppercase; color: #fff; }
+        h1 { font-size: clamp(3rem, 10vw, 6rem); line-height: 0.9; margin-bottom: 1rem; border-left: 6px solid #ff3b30; padding-left: 0.5rem; }
+        h2 { font-size: clamp(2.2rem, 6vw, 4rem); line-height: 1; margin: 2rem 0 1rem; border-bottom: 3px solid #ff3b30; display: inline-block; }
+        h3 { font-size: clamp(1.5rem, 4vw, 2.5rem); margin: 1.5rem 0 0.8rem; }
+        h4 { font-size: 1.25rem; margin: 1rem 0 0.5rem; }
+        p, li, blockquote { font-size: 1.125rem; margin-bottom: 1rem; max-width: 68ch; }
+        .small { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.2em; color: #888; }
+        .accent { color: #ff3b30; font-weight: 700; }
+
+        /* LAYOUT – full bleed, asymmetrical */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+        section { padding: 4rem 0; border-bottom: 1px solid #222; }
+        section:last-of-type { border-bottom: none; }
+
+        /* NAV */
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; background: #111; border-bottom: 2px solid #ff3b30; position: sticky; top: 0; z-index: 100; }
+        .nav-logo { font-size: 1.5rem; font-weight: 900; color: #ff3b30; text-transform: uppercase; letter-spacing: -0.05em; border: none; }
+        .nav-links { display: flex; gap: 2rem; }
+        .nav-links a { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.1em; border-bottom: none; position: relative; }
+        .nav-links a::after { content: ''; display: block; height: 2px; background: #ff3b30; position: absolute; bottom: -4px; left: 0; width: 0; transition: width 0.3s; }
+        .nav-links a:hover::after { width: 100%; }
+        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 4px; background: none; border: none; }
+        .hamburger span { width: 28px; height: 3px; background: #fff; border-radius: 2px; transition: 0.3s; }
+
+        /* HERO */
+        .hero { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; min-height: 70vh; }
+        .hero-content h1 { border-left-color: #ff3b30; }
+        .hero-content p { font-size: 1.3rem; margin-bottom: 2rem; }
+        .hero-image { background: #1a1a1a; min-height: 300px; display: flex; align-items: center; justify-content: center; border: 2px dashed #333; position: relative; }
+        .hero-image::before { content: '☠️ PBN ☠️'; font-size: 4rem; opacity: 0.3; color: #ff3b30; position: absolute; }
+
+        /* CARDS */
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .card { background: #151515; border: 1px solid #2a2a2a; padding: 2rem 1.5rem; transition: border-color 0.3s, transform 0.3s; }
+        .card:hover { border-color: #ff3b30; transform: translateY(-4px); }
+        .card h3 { margin-top: 0; }
+        .card .stat { font-size: 3rem; font-weight: 900; color: #ff3b30; display: block; margin-bottom: 0.5rem; }
+
+        /* FAQ */
+        .faq-item { border-bottom: 1px solid #222; padding: 1.5rem 0; }
+        .faq-question { font-weight: 700; font-size: 1.2rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; text-transform: uppercase; }
+        .faq-question::after { content: '+'; font-size: 1.5rem; color: #ff3b30; transition: transform 0.3s; }
+        .faq-item.active .faq-question::after { transform: rotate(45deg); }
+        .faq-answer { padding-top: 1rem; display: none; }
+        .faq-item.active .faq-answer { display: block; }
+
+        /* TEL LINK */
+        .tel-link { display: inline-block; background: #ff3b30; color: #0d0d0d; padding: 0.8rem 2rem; font-weight: 900; font-size: 1.2rem; text-transform: uppercase; border: none; letter-spacing: 0.1em; transition: background 0.2s, transform 0.2s; border-bottom: none; }
+        .tel-link:hover { background: #cc2f26; transform: scale(1.05); border-bottom: none; }
+
+        /* FOOTER */
+        footer { background: #111; padding: 2rem 1.5rem; text-align: center; border-top: 2px solid #ff3b30; }
+        footer p { margin: 0; font-size: 0.85rem; }
+
+        /* RESPONSIVE 768 */
+        @media (max-width: 768px) {
+            nav { padding: 0.8rem 1rem; }
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 60px; left: 0; width: 100%; background: #111; padding: 1rem; gap: 1rem; border-bottom: 2px solid #ff3b30; }
+            .nav-links.active { display: flex; }
+            .hamburger { display: flex; }
+            .hero { grid-template-columns: 1fr; text-align: center; }
+            h1 { border-left: none; border-top: 4px solid #ff3b30; padding-top: 1rem; }
+            .card-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/" class="nav-logo">PBN</a>
+        <button class="hamburger" aria-label="메뉴 열기" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links">
+            <a href="/">홈</a>
+            <a href="/services">서비스</a>
+            <a href="/info">정보</a>
+            <a href="/contact">문의</a>
+            <a href="tel:010-1234-5678" class="tel-link" style="padding:0.3rem 1rem; font-size:0.8rem;">전화</a>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <div class="container hero">
+                <div class="hero-content">
+                    <h1>서버 웜업의<br>규칙을 다시 쓴다</h1>
+                    <p>마포에서 PBN 빌더가 직접 말한다 — <span class="accent">당신의 링크 파밍은 구식이다.</span> 우리는 24시간 원격 웜업으로 규격을 깨고, brutalism 그 자체로 결과를 만든다. 하드코어한 성과를 원한다면 지금 전화하라.</p>
+                    <a href="tel:010-1234-5678" class="tel-link">24시간 원격 웜업 → 010-1234-5678</a>
+                </div>
+                <div class="hero-image"></div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2>PBN 빌더의 정수</h2>
+                <p>우리는 <span class="accent">마포</span>에 기반을 둔 서버 웜업 전문 팀이다. 당신이 아는 '웜업'은 그저 온도만 높이는 짓이다. 진짜는 — 서버가 PBN 트래픽을 자연스럽게 소화하고, 검색 엔진이 의심하지 않도록 하는 것이다. 우리는 brutalism으로 접근한다. 불필요한 꾸밈 없이, 하드코어한 최적화만 남긴다.</p>
+                <div class="card-grid">
+                    <div class="card">
+                        <span class="stat">24/7</span>
+                        <h3>원격 웜업</h3>
+                        <p>서버에 SSH 한 줄로 진입, 24시간 실시간 모니터링과 자동 웜업 스크립트. 당신이 잠드는 동안에도 링크는 숨 쉰다.</p>
+                    </div>
+                    <div class="card">
+                        <span class="stat">#1</span>
+                        <h3>마포 No.1 PBN</h3>
+                        <p>지역 데이터센터와의 직접 계약, 마포 내 서버만 전문으로 다룬다. 로컬 시그널은 진정성의 척도다.</p>
+                    </div>
+                    <div class="card">
+                        <span class="stat">0%</span>
+                        <h3>핑거프린트 제로</h3>
+                        <p>우리의 웜업 패턴은 검색 엔진이 감지할 수 없다. brutalism은 단순함을 통해 완벽한 위장을 만든다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2>왜 마포인가?</h2>
+                <p><span class="accent">마포</span>는 단순한 지역명이 아니다. 한국에서 가장 빠른 서버 인프라와 낮은 지연시간을 자랑하는 허브 중 하나다. 우리는 이곳에서 5년째 PBN 빌더로 활동하며, 매달 200+ 서버를 웜업한다. 규격을 따르는 자들은 여기 올 이유가 없다. 우리는 규격을 깨기 위해 여기 있다.</p>
+                <blockquote style="border-left: 4px solid #ff3b30; padding-left: 1.5rem; margin: 2rem 0; font-style: italic;">
+                    “마포의 밤은 조용하다. 그러나 서버는 쉬지 않는다. 우리의 웜업은 그 침묵을 깨지 않는다.”
+                </blockquote>
+                <a href="tel:010-1234-5678" class="tel-link">지금 전화해서 증명을 요구하라</a>
+            </div>
+        </section>
+
+        <section>
+            <
+</body>
+</html>

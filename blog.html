@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블로그 | 마포 서버 웜업 PBN 빌더</title>
+    <meta name="description" content="PBN 빌더의 서버 웜업, 마포에서의 brutalist 접근법. 링크 파워를 극한으로 끌어올리는 하드코어 전략을 공개한다.">
+    <meta name="keywords" content="PBN 빌더, 서버 웜업, 마포, PBN, 웜업, 서버 관리, brutalist, PBN builder, server warmup, link building, 블로그">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <link rel="canonical" href="https://sf-t3-1779642675702-181.pages.dev/blog">
+    <meta property="og:title" content="PBN 빌더 | 마포 서버 웜업 블로그">
+    <meta property="og:description" content="진짜 웜업은 규격을 깬다. 마포 PBN 빌더의 생생한 현장 전략.">
+    <style>
+        /* RESET & BASE */
+        * { margin:0; padding:0; box-sizing:border-box; }
+        html { font-size:16px; scroll-behavior:smooth; }
+        body { background:#0b0b0b; color:#e0e0e0; font-family:'Courier New',monospace; line-height:1.8; min-height:100vh; overflow-x:hidden; }
+        img, svg { max-width:100%; display:block; }
+        a { color:#f0f; text-decoration:none; border-bottom:2px solid transparent; transition:0.2s; }
+        a:hover { color:#0ff; border-bottom-color:#0ff; }
+        ul { list-style:none; }
+        /* TYPOGRAPHY */
+        h1,h2,h3,h4 { font-weight:900; text-transform:uppercase; letter-spacing:-0.04em; }
+        h1 { font-size:clamp(2.5rem,8vw,5.5rem); line-height:0.9; color:#fff; text-shadow:0 0 20px #f0f,0 0 40px #f0f; }
+        h2 { font-size:clamp(2rem,6vw,4rem); color:#f0f; margin-bottom:0.75rem; }
+        h3 { font-size:clamp(1.5rem,4vw,2.5rem); color:#0ff; }
+        h4 { font-size:clamp(1.2rem,3vw,1.8rem); color:#fff; }
+        p, li, blockquote { font-size:1.125rem; max-width:65ch; }
+        .small { font-size:0.8rem; opacity:0.6; }
+        .accent { color:#f0f; font-weight:bold; }
+        /* LAYOUT */
+        body { display:flex; flex-direction:column; }
+        .container { width:100%; max-width:1400px; margin:0 auto; padding:2rem; }
+        .full-bleed { width:100vw; margin-left:calc(-50vw + 50%); }
+        /* NAV */
+        nav { background:#111; border-bottom:4px solid #f0f; padding:0.75rem 2rem; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:100; }
+        nav .logo { font-size:1.8rem; font-weight:900; color:#fff; text-shadow:0 0 10px #f0f; }
+        nav ul { display:flex; gap:2rem; }
+        nav a { color:#aaa; font-size:1.1rem; border:none; }
+        nav a:hover, nav a.active { color:#0ff; border-bottom:3px solid #0ff; }
+        .hamburger { display:none; flex-direction:column; cursor:pointer; gap:5px; }
+        .hamburger span { width:30px; height:4px; background:#0ff; }
+        @media (max-width:768px) {
+            nav ul { display:none; flex-direction:column; background:#111; position:absolute; top:100%; left:0; width:100%; padding:1rem; gap:1rem; }
+            nav ul.show { display:flex; }
+            .hamburger { display:flex; }
+        }
+        /* HERO / BLOG POST */
+        .blog-post { padding:4rem 0; border-bottom:2px solid #333; }
+        .blog-post header { margin-bottom:3rem; }
+        .blog-post .meta { display:flex; gap:2rem; font-size:0.9rem; color:#888; margin-top:1rem; }
+        .blog-post .content p { margin-bottom:1.5rem; text-align:justify; }
+        .blog-post .content blockquote { border-left:6px solid #f0f; padding-left:1.5rem; margin:2rem 0; font-style:italic; color:#ccc; }
+        .blog-post .content .highlight { background:#1a1a1a; padding:2rem; border:2px dashed #f0f; margin:2rem 0; }
+        /* CTA SECTION */
+        .cta-section { background:#111; padding:4rem 2rem; text-align:center; border-top:4px solid #0ff; margin-top:4rem; }
+        .cta-section h2 { margin-bottom:1rem; }
+        .cta-section .tel-link { display:inline-block; background:#f0f; color:#0b0b0b; padding:1rem 3rem; font-size:1.5rem; font-weight:900; border-radius:0; transition:0.3s; border:none; }
+        .cta-section .tel-link:hover { background:#0ff; color:#0b0b0b; transform:scale(1.05); }
+        /* FOOTER */
+        footer { background:#080808; padding:2rem; border-top:2px solid #333; text-align:center; font-size:0.9rem; color:#666; }
+        footer a { color:#0ff; }
+    </style>
+</head>
+<body>
+    <!-- NAV -->
+    <nav>
+        <div class="logo">PBN 빌더</div>
+        <button class="hamburger" onclick="document.querySelector('nav ul').classList.toggle('show')">
+            <span></span><span></span><span></span>
+        </button>
+        <ul>
+            <li><a href="/">홈</a></li>
+            <li><a href="/services">서비스</a></li>
+            <li><a href="/blog" class="active">블로그</a></li>
+            <li><a href="tel:010-1234-5678">전화</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+            <!-- 블로그 포스트 (1편) -->
+            <article class="blog-post">
+                <header>
+                    <h1>왜 PBN 빌더가 서버 웜업의 게임 체인저인가</h1>
+                    <div class="meta">
+                        <span>2025.03.25</span>
+                        <span>마포 본사</span>
+                        <span>by 프로 웜업팀</span>
+                    </div>
+                </header>
+                <div class="content">
+                    <p>규격을 따르는 웜업은 이제 그만이다. 마포 PBN 빌더가 제안하는 방식은 기존의 모든 관행을 깬다. 왜? 대부분의 서버 웜업이 멍청한 타이머와 가짜 트래픽에 의존하기 때문이다. 우리는 진짜 링크 파워를 원한다. brutalism 그 자체로, 하드코어한 인덱싱 속도를 만든다.</p>
+                    
+                    <blockquote>
+                        “서버 웜업은 예술이 아니라 전쟁이다. 규격서에 적힌 대로 하면 넌 지는 거다.”
+                    </blockquote>
+
+                    <p>PBN 네트워크를 운영해본 사람이라면 알 것이다. 신규 도메인이 샌드박스에 갇히는 순간, 모든 링크 빌딩은 시간 낭비가 된다. 여기서 핵심은 <span class="accent">서버 레벨의 웜업</span>이다. IP 리스팅, 사이트 구조, 콘텐츠 시딩 — 이 모든 것이 동시에 터져야 한다.</p>
+
+                    <div class="highlight">
+                        <h3>마포 PBN 빌더의 3원칙</h3>
+                        <ul>
+                            <li>1. IP는 반드시 마포 데이터센터에서 — 지연시간 1ms 미만</li>
+                            <li>2. 초기 콘텐츠는 5000단어 이상, 인간이 쓴 듯한 자연스러운 에러 포함</li>
+                            <li>3. 웜업 기간 동안 매일 50~200개의 유기적 백링크 시뮬레이션</li>
+                        </ul>
+                    </div>
+
+                    <p>우리는 brutalism을 디자인에만 쓰지 않는다. 서버 웜업 자체를 brutal하게 만든다. 기존 업체들이 3개월 걸리는 작업을 우리는 14일 안에 끝낸다. 단, 대가는 가혹하다. 약한 멘탈은 지원하지 마라.</p>
+
+                    <p>이 전략이 효과가 있는 이유는 간단하다. 구글의 알고리즘은 완벽한 것보다 <span class="accent">약간의 노이즈</span>가 섞인 데이터를 더 신뢰한다. 우리는 그 지점을 공략한다. 마포에서 PBN 빌더로 웜업한 사이트는 90% 이상의 샌드박스 탈출 성공률을 보인다.</p>
+
+                    <p>지금 당장 전화하라. 상담은 30분, 비용은 시간당 50만원. 진짜를 원한다면 이 가격은 당신에게 싸다.</p>
+                </div>
+            </article>
+        </div>
+
+        <!-- CTA -->
+        <section class="cta-section full-bleed">
+            <h2>지금 바로 웜업을 시작하라</h2>
+            <p style="margin-bottom:2rem;">규격을 깨고 싶다면 이 번호로 전화하라.</p>
+            <a href="tel:010-1234-5678" class="tel-link">010-1234-5678</a>
+            <p class="small" style="margin-top:2rem;">24시간 상담 가능 / 마포 직영</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 PBN 빌더 — 마포 | 서버 웜업 전문 | brutalism 그 자체</p>
+        <p><a href="tel:010-1234-5678">전화 걸기</a> | <a href="mailto:hello@pbnbuilder.kr">메일</a></p>
+    </footer>
+
+    <script>
+        // 햄버거 메뉴 동작 (모바일)
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
